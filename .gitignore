@@ -6,6 +6,8 @@
 .pnp.js
 package-lock.json
 .env
+.gitignore
+/react-app-env.d.ts
 
 # testing
 /coverage
