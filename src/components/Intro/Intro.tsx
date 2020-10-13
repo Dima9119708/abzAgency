@@ -15,7 +15,7 @@ export const Intro : React.FC = () => {
                         minimum requirements. We look forward to your submission. Good luck!
                         The photo has to scale in the banner area on the different screens
                     </p>
-                    <a href="/" className="sing__button">Sing up now</a>
+                    <button className="sing__button" type="button">Sing up now</button>
                 </div>
             </div>
         </div>

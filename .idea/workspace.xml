@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00abbae4-3e8c-44ff-94cc-7f1e31de8aa0" name="Default Changelist" comment="" />
+    <list default="true" id="00abbae4-3e8c-44ff-94cc-7f1e31de8aa0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/baseStyles/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/baseStyles/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Acquaintance/Acquaintance.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Acquaintance/Acquaintance.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Acquaintance/acquaintance.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Acquaintance/acquaintance.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Intro/Intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Intro/Intro.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Intro/intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Intro/intro.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ioWhlqE9ptnow8NYFyNgVZDKmE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,11 +45,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Dima\Desktop\abzagency\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Dima\Desktop\abzagency\src\assets\scss" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dima\Desktop\abzagency\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -54,12 +72,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602574547722</updated>
-      <workItem from="1602574548731" duration="13723000" />
+      <workItem from="1602574548731" duration="13979000" />
+      <workItem from="1602589648931" duration="441000" />
+      <workItem from="1602597918987" duration="4856000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="258" width="783" height="500" key="#File_Watchers" timestamp="1602576365974">
@@ -70,33 +93,37 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="286" y="130" width="1107" height="820" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1602574892668" />
-    <state x="506" y="265" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602574916310">
+    <state x="506" y="265" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602589455658">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="506" y="265" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1602574916310" />
+    <state x="506" y="265" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1602589455658" />
     <state x="439" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602574814688">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="439" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1602574814688" />
+    <state x="279" y="0" key="CommitChangelistDialog2" timestamp="1602589901705">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="279" y="0" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1602589901705" />
     <state x="403" y="173" key="EditFileWatcherDialog" timestamp="1602575039847">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="403" y="173" key="EditFileWatcherDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1602575039847" />
-    <state width="1630" height="238" key="GridCell.Tab.0.bottom" timestamp="1602574958897">
+    <state width="1647" height="240" key="GridCell.Tab.0.bottom" timestamp="1602597925486">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1630" height="238" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1602574958897" />
-    <state width="1630" height="238" key="GridCell.Tab.0.center" timestamp="1602574958897">
+    <state width="1647" height="240" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1602597925486" />
+    <state width="1647" height="240" key="GridCell.Tab.0.center" timestamp="1602597925486">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1630" height="238" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1602574958897" />
-    <state width="1630" height="238" key="GridCell.Tab.0.left" timestamp="1602574958897">
+    <state width="1647" height="240" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1602597925486" />
+    <state width="1647" height="240" key="GridCell.Tab.0.left" timestamp="1602597925486">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1630" height="238" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1602574958897" />
-    <state width="1630" height="238" key="GridCell.Tab.0.right" timestamp="1602574958897">
+    <state width="1647" height="240" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1602597925486" />
+    <state width="1647" height="240" key="GridCell.Tab.0.right" timestamp="1602597925486">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1630" height="238" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1602574958897" />
+    <state width="1647" height="240" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1602597925486" />
   </component>
 </project>
