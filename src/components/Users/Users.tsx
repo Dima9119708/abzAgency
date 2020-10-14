@@ -14,7 +14,7 @@ export const Users : React.FC = () => {
 
                     <div className="user__card">
                         <div className="user__card-img">
-                            <img className="image" src={defaultUserFoto}/>
+                            <img className="image" src={defaultUserFoto} alt={'defaultUserFoto'}/>
                         </div>
                         <div className="user__card-name">Maximillian</div>
                         <div className="user__card-position">Leading specialist of the Control Department</div>
@@ -24,7 +24,7 @@ export const Users : React.FC = () => {
 
                     <div className="user__card">
                         <div className="user__card-img">
-                            <img className="image" src={defaultUserFoto}/>
+                            <img className="image" src={defaultUserFoto} alt={'defaultUserFoto'}/>
                         </div>
                         <div className="user__card-name">Adolph Blaine Charles David Earl Matthew Matthew</div>
                         <div className="user__card-position">Contextual advertising specialist</div>
@@ -34,7 +34,7 @@ export const Users : React.FC = () => {
 
                     <div className="user__card">
                         <div className="user__card-img">
-                            <img className="image" src={defaultUserFoto}/>
+                            <img className="image" src={defaultUserFoto} alt={'defaultUserFoto'}/>
                         </div>
                         <div className="user__card-name">Adolph Blaine Charles David Earl Matthew Matthew</div>
                         <div className="user__card-position">Contextual advertising specialist</div>
@@ -44,7 +44,7 @@ export const Users : React.FC = () => {
 
                     <div className="user__card">
                         <div className="user__card-img">
-                            <img className="image" src={defaultUserFoto}/>
+                            <img className="image" src={defaultUserFoto} alt={'defaultUserFoto'}/>
                         </div>
                         <div className="user__card-name">Adolph Blaine Charles David Earl Matthew Matthew</div>
                         <div className="user__card-position">Contextual advertising specialist</div>
@@ -54,7 +54,7 @@ export const Users : React.FC = () => {
 
                     <div className="user__card">
                         <div className="user__card-img">
-                            <img className="image" src={defaultUserFoto}/>
+                            <img className="image" src={defaultUserFoto} alt={'defaultUserFoto'}/>
                         </div>
                         <div className="user__card-name">Adolph Blaine Charles David Earl Matthew Matthew</div>
                         <div className="user__card-position">Contextual advertising specialist</div>
@@ -64,7 +64,7 @@ export const Users : React.FC = () => {
 
                     <div className="user__card">
                         <div className="user__card-img">
-                            <img className="image" src={defaultUserFoto}/>
+                            <img className="image" src={defaultUserFoto} alt={'defaultUserFoto'}/>
                         </div>
                         <div className="user__card-name">Adolph Blaine Charles David Earl Matthew Matthew</div>
                         <div className="user__card-position">Contextual advertising specialist</div>

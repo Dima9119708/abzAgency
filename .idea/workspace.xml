@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00abbae4-3e8c-44ff-94cc-7f1e31de8aa0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Forma/Forma.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Forma/forma.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Users/users.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Forma/RadioButtonStyle.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/scss/baseStyles/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/baseStyles/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Acquaintance/Acquaintance.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Acquaintance/Acquaintance.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Acquaintance/acquaintance.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Acquaintance/acquaintance.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/baseStyles/_font.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/baseStyles/_font.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Forma/Forma.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forma/Forma.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Forma/forma.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forma/forma.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Intro/intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Intro/intro.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
+        <entry key="$PROJECT_DIR$" value="main" />
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
@@ -79,7 +80,7 @@
       <workItem from="1602574548731" duration="13979000" />
       <workItem from="1602589648931" duration="441000" />
       <workItem from="1602597918987" duration="6201000" />
-      <workItem from="1602660510429" duration="12084000" />
+      <workItem from="1602660510429" duration="19177000" />
     </task>
     <task id="LOCAL-00001" summary="Третий блок конец верстки.">
       <created>1602602838411</created>
@@ -88,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602602838411</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Конец третьего блока. Начало работы над формой">
+      <created>1602675692207</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602675692207</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,7 +104,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Третий блок конец верстки." />
-    <option name="LAST_COMMIT_MESSAGE" value="Третий блок конец верстки." />
+    <MESSAGE value="Конец третьего блока. Начало работы над формой" />
+    <option name="LAST_COMMIT_MESSAGE" value="Конец третьего блока. Начало работы над формой" />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="258" width="783" height="500" key="#File_Watchers" timestamp="1602576365974">
@@ -107,41 +116,52 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="286" y="130" width="1107" height="820" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1602574892668" />
-    <state x="506" y="265" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602589455658">
+    <state x="506" y="265" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602681899250">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="506" y="265" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1602589455658" />
+    <state x="506" y="265" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1602681899250" />
     <state x="439" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602574814688">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="439" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1602574814688" />
-    <state x="279" y="0" key="CommitChangelistDialog2" timestamp="1602602837849">
+    <state x="279" y="0" key="CommitChangelistDialog2" timestamp="1602675691710">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="279" y="0" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1602602837849" />
+    <state x="279" y="0" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1602675691710" />
     <state x="403" y="173" key="EditFileWatcherDialog" timestamp="1602575039847">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="403" y="173" key="EditFileWatcherDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1602575039847" />
-    <state width="1647" height="240" key="GridCell.Tab.0.bottom" timestamp="1602660565991">
+    <state width="1645" height="221" key="GridCell.Tab.0.bottom" timestamp="1602682931142">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1647" height="240" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1602660565991" />
-    <state width="1647" height="240" key="GridCell.Tab.0.center" timestamp="1602660565991">
+    <state width="1645" height="221" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1602682931142" />
+    <state width="1645" height="221" key="GridCell.Tab.0.center" timestamp="1602682931142">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1647" height="240" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1602660565991" />
-    <state width="1647" height="240" key="GridCell.Tab.0.left" timestamp="1602660565991">
+    <state width="1645" height="221" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1602682931142" />
+    <state width="1645" height="221" key="GridCell.Tab.0.left" timestamp="1602682931142">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1647" height="240" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1602660565991" />
-    <state width="1647" height="240" key="GridCell.Tab.0.right" timestamp="1602660565991">
+    <state width="1645" height="221" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1602682931142" />
+    <state width="1645" height="221" key="GridCell.Tab.0.right" timestamp="1602682931142">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1647" height="240" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1602660565991" />
-    <state x="232" y="106" key="Vcs.Push.Dialog.v2" timestamp="1602602843669">
+    <state width="1645" height="221" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1602682931142" />
+    <state x="232" y="106" key="Vcs.Push.Dialog.v2" timestamp="1602675705907">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="232" y="106" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1602602843669" />
+    <state x="232" y="106" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1602675705907" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Header/Header.tsx</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

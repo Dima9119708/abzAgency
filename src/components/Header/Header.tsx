@@ -10,8 +10,8 @@ export const Header : React.FC = () => {
                 <div className="header__inner">
 
                     <div className="header__logo">
-                        <a className="header__logo-link" href="/">
-                            <img src={logo} alt="logoTest"/>
+                        <a className="header__logo-link" href={'/'}>
+                            <img src={logo} alt={'testFrontLogo'} />
                         </a>
                     </div>
 
