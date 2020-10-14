@@ -1,0 +1,39 @@
+.mobileMenu-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(0, 0%, 0%, 0.5);
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 290px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  z-index: 999;
+
+  &__logo {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 12px 15px;
+  }
+
+  &__menu {
+    padding-top: 30px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+
+  &__menu .mobileMenu__menu-link {
+    display: block;
+    padding: 0 15px;
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+    margin-bottom: 30px;
+  }
+}

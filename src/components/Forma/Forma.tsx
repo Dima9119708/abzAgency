@@ -6,7 +6,7 @@ import { StyledRadio } from "./RadioButtonStyle";
 export const Forma = () => {
 
     return (
-        <div className="forma boxPadding">
+        <section className="forma boxPadding">
             <div className="container">
                 <div className="forma__title">
                     <h2 className="title">Register to get a work</h2>
@@ -21,22 +21,22 @@ export const Forma = () => {
 
                         <label className="form__label" htmlFor="name">Name</label>
                         <input className="form__input" id="name" placeholder="Your name"/>
-                        <p className="form__error">Error</p>
-
-                    </div>
-
-                    <div className="form__block">
-
-                        <label className="form__label" htmlFor="name">Email</label>
-                        <input className="form__input" id="name" placeholder="Your email"/>
                         <p className="form__error"></p>
 
                     </div>
 
                     <div className="form__block">
 
-                        <label className="form__label" htmlFor="name">Phone number</label>
-                        <input className="form__input" type="number" id="name" placeholder="+380 XX XXX XX XX"/>
+                        <label className="form__label" htmlFor="Email">Email</label>
+                        <input className="form__input" id="Email" placeholder="Your email"/>
+                        <p className="form__error"></p>
+
+                    </div>
+
+                    <div className="form__block">
+
+                        <label className="form__label" htmlFor="Phone number">Phone number</label>
+                        <input className="form__input" type="number" id="Phone number" placeholder="+380 XX XXX XX XX"/>
                         <p className="form__error"></p>
                         <p className="form__text">Еnter phone number in open format</p>
 
@@ -55,8 +55,27 @@ export const Forma = () => {
                         </FormControl>
                     </div>
 
+                    <div className="form__block">
+
+                        <div className="form__inner">
+                         <input
+                             className="form__input"
+                             type="text" disabled
+                             style={{backgroundColor : '#ffffff'}}
+                             placeholder="Upload your photo"
+                         />
+                         <input className="form__input-file" id="file" type="file"/>
+                         <label className="form__input-file-label" htmlFor="file">Browse</label>
+                        </div>
+                        <p className="form__error"></p>
+                    </div>
+
+                    <div className="form__button">
+                        <button className="sing__button" type="submit">Sing up now</button>
+                    </div>
+
                 </form>
             </div>
-        </div>
+        </section>
     )
 }

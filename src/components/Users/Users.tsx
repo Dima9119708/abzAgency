@@ -3,7 +3,7 @@ import defaultUserFoto from '../../assets/img/photo-cover.svg'
 
 export const Users : React.FC = () => {
     return (
-        <div className="users boxPadding">
+        <section className="users boxPadding">
             <div className="container">
                 <div className="users__title">
                     <h2 className="title">Our cheerful users</h2>
@@ -79,6 +79,6 @@ export const Users : React.FC = () => {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 }

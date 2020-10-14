@@ -4,7 +4,7 @@ import imgLayer10 from '../../assets/img/man-laptop-v1.svg'
 export const Acquaintance : React.FC = () => {
 
     return (
-        <div className="acquaintance boxPadding">
+        <section className="acquaintance boxPadding">
             <div className="container">
                 <h2 className="title">Let's get acquainted</h2>
                 <div className="acquaintance__inner">
@@ -36,6 +36,6 @@ export const Acquaintance : React.FC = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
