@@ -1,0 +1,138 @@
+.users {
+  background-color: #f9f9f3;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 38px;
+
+    @media(min-width: $tableWidth) {
+      margin-bottom: 78px;
+    }
+  }
+
+  & .title {
+    color: #212529;
+    text-transform: none;
+    margin-bottom: 12px;
+
+    @media(min-width: $tableWidth) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__subtitle-text {
+    line-height: 1.38;
+    font-size: 16px;
+    max-width: 446px;
+    margin: 0 auto;
+    word-break: break-word;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 230px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    @media(min-width: $tableWidth) {
+      flex-direction: row;
+      max-width: 768px;
+    }
+
+    @media(min-width: $maxContent) {
+      max-width: 860px;
+    }
+  }
+
+  &__inner .user__card {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+
+    @media(min-width: $tableWidth) {
+      margin-right: 35px;
+      width: 30%;
+      margin-bottom: 60px;
+    }
+
+    @media(min-width: $maxContent) {
+      margin-right: 80px;
+      width: 27%;
+    }
+  }
+
+  &__inner .user__card:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &__inner .user__card:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  &__inner .user__card:nth-last-child(2) {
+
+    @media(min-width: $tableWidth) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__inner .user__card:nth-last-child(3) {
+
+    @media(min-width: $tableWidth) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__inner .user__card .user__card-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    & .image {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      overflow: hidden;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+
+  &__inner .user__card .user__card-name{
+    color: #212529;
+    font-size: 24px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+  }
+
+  &__inner .user__card .user__card-position{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #4c4b4b;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 3px;
+  }
+
+  &__inner .user__card .user__card-email{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #4c4b4b;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 3px;
+  }
+
+  &__showMore {
+    display: flex;
+    justify-content: center;
+  }
+}
