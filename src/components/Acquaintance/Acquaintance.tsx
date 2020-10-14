@@ -4,12 +4,12 @@ import imgLayer10 from '../../assets/img/man-laptop-v1.svg'
 export const Acquaintance : React.FC = () => {
 
     return (
-        <div className="acquaintance">
+        <div className="acquaintance boxPadding">
             <div className="container">
                 <h2 className="title">Let's get acquainted</h2>
                 <div className="acquaintance__inner">
                     <div className="acquaintance__img">
-                        <img src={imgLayer10} />
+                        <img src={imgLayer10} alt="imgLayer10"/>
                     </div>
                     <div className="acquaintance__dist">
                         <h3 className="acquaintance__dist-title">

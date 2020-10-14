@@ -54,15 +54,22 @@ button {
 .title {
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: 50px;
+  font-size: 30px;
   line-height: 1.08;
-  text-transform: uppercase;
   font-weight: normal;
+
+  @media(min-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media(min-width: 1200px) {
+    font-size: 50px;
+  }
 }
 
 .sing__button {
   width: max-content;
-  padding: 9px 59px;
+  padding: 10px 59px;
   border-radius: 4px;
   background-color: #ef5b4c;
   color: #fefefe;
@@ -73,5 +80,17 @@ button {
 
   &:hover {
     background-color: #d24335;
+  }
+}
+
+.boxPadding {
+  padding: 80px 0;
+
+  @media(min-width: $tableWidth) {
+    padding: 120px 0;
+  }
+
+  @media(min-width: $maxContent) {
+    padding: 160px 0;
   }
 }

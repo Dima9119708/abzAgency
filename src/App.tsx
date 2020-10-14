@@ -3,6 +3,8 @@ import './assets/scss/app.scss'
 import {Header} from "./components/Header/Header";
 import {Intro} from "./components/Intro/Intro";
 import {Acquaintance} from "./components/Acquaintance/Acquaintance";
+import {Users} from "./components/Users/Users";
+import {Forma} from "./components/Forma/Forma";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <div className="container__wide mg-top">
             <Intro />
             <Acquaintance />
+            <Users />
+            <Forma />
         </div>
     </>
   );
