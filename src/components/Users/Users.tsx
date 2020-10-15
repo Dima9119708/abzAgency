@@ -1,9 +1,24 @@
 import React from "react";
 import defaultUserFoto from '../../assets/img/photo-cover.svg'
+import {useDispatch} from "react-redux";
+import {SET_USERS_OFFSET_TOP_ACTION} from "../../redux/action";
 
 export const Users : React.FC = () => {
+
+    const dispatch = useDispatch()
+
+    const $usersDiv = React.useRef(null)
+
+    React.useEffect(() => {
+
+        const $divUsers = $usersDiv.current! as HTMLDivElement
+        const offsetTop = $divUsers.offsetTop
+        dispatch(SET_USERS_OFFSET_TOP_ACTION(offsetTop))
+
+    }, [$usersDiv])
+
     return (
-        <div className="users boxPadding">
+        <section ref={$usersDiv} className="users boxPadding">
             <div className="container">
                 <div className="users__title">
                     <h2 className="title">Our cheerful users</h2>
@@ -79,6 +94,6 @@ export const Users : React.FC = () => {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 }

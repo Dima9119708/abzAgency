@@ -70,6 +70,11 @@
 
       @media(min-width: $tableWidth) {
          text-align: left;
+         -webkit-line-clamp: 6;
+      }
+
+      @media(min-width: $maxContent) {
+         text-align: left;
          -webkit-line-clamp: 5;
       }
    }
