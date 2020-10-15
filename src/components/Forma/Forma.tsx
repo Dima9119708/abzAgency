@@ -1,12 +1,25 @@
 import React from "react";
 import {FormControl, RadioGroup, FormControlLabel } from "@material-ui/core";
 import { StyledRadio } from "./RadioButtonStyle";
+import {useDispatch} from "react-redux";
+import {SET_FORMA_OFFSET_TOP_ACTION} from "../../redux/action";
 
 
 export const Forma = () => {
 
+    const $formDiv = React.useRef(null)
+    const dispatch = useDispatch()
+
+    React.useEffect(() => {
+
+        const $forma = $formDiv.current! as HTMLDivElement
+        const offsetTop = $forma.offsetTop
+        dispatch(SET_FORMA_OFFSET_TOP_ACTION(offsetTop))
+
+    }, [$formDiv])
+
     return (
-        <section className="forma boxPadding">
+        <section ref={$formDiv} className="forma boxPadding">
             <div className="container">
                 <div className="forma__title">
                     <h2 className="title">Register to get a work</h2>

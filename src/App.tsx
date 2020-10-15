@@ -9,6 +9,7 @@ import {Footer} from "./components/Footer/Footer";
 import {MobileMenu} from "./components/MobileMenu/MobileMenu";
 
 function App() {
+
   return (
     <>
         <Header />

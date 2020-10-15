@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00abbae4-3e8c-44ff-94cc-7f1e31de8aa0" name="Default Changelist" comment="Осталась доработка формы с регистрацией">
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MobileMenu/MobileMenu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MobileMenu/mobileMenu.scss" afterDir="false" />
+    <list default="true" id="00abbae4-3e8c-44ff-94cc-7f1e31de8aa0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/EclipseTooltip/EclipseTooltip.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/action.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Acquaintance/Acquaintance.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Acquaintance/Acquaintance.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/baseStyles/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/baseStyles/_base.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Forma/Forma.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forma/Forma.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Forma/forma.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forma/forma.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Intro/Intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Intro/Intro.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Intro/intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Intro/intro.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MobileMenu/MobileMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MobileMenu/MobileMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MobileMenu/mobileMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MobileMenu/mobileMenu.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/users.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/users.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +87,9 @@
       <workItem from="1602589648931" duration="441000" />
       <workItem from="1602597918987" duration="6201000" />
       <workItem from="1602660510429" duration="19569000" />
-      <workItem from="1602685492065" duration="4421000" />
+      <workItem from="1602685492065" duration="4519000" />
+      <workItem from="1602745978902" duration="5011000" />
+      <workItem from="1602762965934" duration="13899000" />
     </task>
     <task id="LOCAL-00001" summary="Третий блок конец верстки.">
       <created>1602602838411</created>
@@ -104,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602683952139</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Завершение верстки.">
+      <created>1602690017057</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602690017057</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,7 +129,8 @@
     <MESSAGE value="Третий блок конец верстки." />
     <MESSAGE value="Конец третьего блока. Начало работы над формой" />
     <MESSAGE value="Осталась доработка формы с регистрацией" />
-    <option name="LAST_COMMIT_MESSAGE" value="Осталась доработка формы с регистрацией" />
+    <MESSAGE value="Завершение верстки." />
+    <option name="LAST_COMMIT_MESSAGE" value="Завершение верстки." />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="258" width="783" height="500" key="#File_Watchers" timestamp="1602576365974">
@@ -125,41 +141,49 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="286" y="130" width="1107" height="820" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1602574892668" />
-    <state x="506" y="265" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602687194597">
+    <state x="506" y="265" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602768574071">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="506" y="265" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1602687194597" />
+    <state x="506" y="265" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1602768574071" />
     <state x="439" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602574814688">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="439" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1602574814688" />
-    <state x="279" y="0" key="CommitChangelistDialog2" timestamp="1602683956808">
+    <state x="279" y="0" key="CommitChangelistDialog2" timestamp="1602690016587">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="279" y="0" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1602683956808" />
+    <state x="279" y="0" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1602690016587" />
+    <state x="100" y="157" width="1480" height="761" key="DiffContextDialog" timestamp="1602763429070">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="100" y="157" width="1480" height="761" key="DiffContextDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1602763429070" />
     <state x="403" y="173" key="EditFileWatcherDialog" timestamp="1602575039847">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="403" y="173" key="EditFileWatcherDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1602575039847" />
-    <state width="1630" height="221" key="GridCell.Tab.0.bottom" timestamp="1602685494860">
+    <state width="1637" height="453" key="GridCell.Tab.0.bottom" timestamp="1602775726519">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1630" height="221" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1602685494860" />
-    <state width="1630" height="221" key="GridCell.Tab.0.center" timestamp="1602685494860">
+    <state width="1637" height="453" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1602775726519" />
+    <state width="1637" height="453" key="GridCell.Tab.0.center" timestamp="1602775726519">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1630" height="221" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1602685494860" />
-    <state width="1630" height="221" key="GridCell.Tab.0.left" timestamp="1602685494860">
+    <state width="1637" height="453" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1602775726519" />
+    <state width="1637" height="453" key="GridCell.Tab.0.left" timestamp="1602775726519">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1630" height="221" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1602685494860" />
-    <state width="1630" height="221" key="GridCell.Tab.0.right" timestamp="1602685494860">
+    <state width="1637" height="453" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1602775726519" />
+    <state width="1637" height="453" key="GridCell.Tab.0.right" timestamp="1602775726519">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1630" height="221" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1602685494860" />
-    <state x="232" y="106" key="Vcs.Push.Dialog.v2" timestamp="1602683958994">
+    <state width="1637" height="453" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1602775726519" />
+    <state x="232" y="106" key="Vcs.Push.Dialog.v2" timestamp="1602690020925">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="232" y="106" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1602683958994" />
+    <state x="232" y="106" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1602690020925" />
+    <state x="199" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602771072479">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="199" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1602771072479" />
   </component>
 </project>
