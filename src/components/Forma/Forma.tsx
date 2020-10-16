@@ -1,8 +1,11 @@
 import React from "react";
-import {FormControl, RadioGroup, FormControlLabel } from "@material-ui/core";
-import { StyledRadio } from "./RadioButtonStyle";
 import {useDispatch} from "react-redux";
 import {SET_FORMA_OFFSET_TOP_ACTION} from "../../redux/action";
+import {FormName} from "./form.component/FormName";
+import {FormEmail} from "./form.component/FormEmail";
+import {FormPhoneNumber} from "./form.component/FormPhoneNumber";
+import {FormRadio} from "./form.component/FormRadio";
+import {FormLoadImage} from "./form.component/FormLoadImage";
 
 
 export const Forma = () => {
@@ -31,56 +34,23 @@ export const Forma = () => {
                 <form className="form">
 
                     <div className="form__block">
-
-                        <label className="form__label" htmlFor="name">Name</label>
-                        <input className="form__input" id="name" placeholder="Your name"/>
-                        <p className="form__error"></p>
-
+                        <FormName />
                     </div>
 
                     <div className="form__block">
-
-                        <label className="form__label" htmlFor="Email">Email</label>
-                        <input className="form__input" id="Email" placeholder="Your email"/>
-                        <p className="form__error"></p>
-
+                        <FormEmail />
                     </div>
 
                     <div className="form__block">
-
-                        <label className="form__label" htmlFor="Phone number">Phone number</label>
-                        <input className="form__input" type="number" id="Phone number" placeholder="+380 XX XXX XX XX"/>
-                        <p className="form__error"></p>
-                        <p className="form__text">Еnter phone number in open format</p>
-
+                        <FormPhoneNumber />
                     </div>
 
                     <div className="form__block">
-
-                        <h5 className="form__title">Select your position</h5>
-                        <FormControl component="fieldset">
-                            <RadioGroup defaultValue="Frontend developer" aria-label="gender" name="customized-radios">
-                                <FormControlLabel value="Frontend developer" control={<StyledRadio />} label="Frontend developer" />
-                                <FormControlLabel value="Backend developer" control={<StyledRadio />} label="Backend developer" />
-                                <FormControlLabel value="Designer" control={<StyledRadio />} label="Designer" />
-                                <FormControlLabel value="QA" control={<StyledRadio />} label="QA" />
-                            </RadioGroup>
-                        </FormControl>
+                        <FormRadio />
                     </div>
 
                     <div className="form__block">
-
-                        <div className="form__inner">
-                         <input
-                             className="form__input"
-                             type="text" disabled
-                             style={{backgroundColor : '#ffffff'}}
-                             placeholder="Upload your photo"
-                         />
-                         <input className="form__input-file" id="file" type="file"/>
-                         <label className="form__input-file-label" htmlFor="file">Browse</label>
-                        </div>
-                        <p className="form__error"></p>
+                       <FormLoadImage />
                     </div>
 
                     <div className="form__button">
