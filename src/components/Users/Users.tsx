@@ -2,6 +2,7 @@ import React from "react";
 import defaultUserFoto from '../../assets/img/photo-cover.svg'
 import {useDispatch} from "react-redux";
 import {SET_USERS_OFFSET_TOP_ACTION} from "../../redux/action";
+import {EclipseTooltip} from "../EclipseTooltip/EclipseTooltip";
 
 export const Users : React.FC = () => {
 
@@ -32,7 +33,13 @@ export const Users : React.FC = () => {
                             <img className="image" src={defaultUserFoto} alt={'defaultUserFoto'}/>
                         </div>
                         <div className="user__card-name">Maximillian</div>
-                        <div className="user__card-position">Leading specialist of the Control Department</div>
+
+                        <EclipseTooltip >
+                             <div className="user__card-position">
+                                 Leading specialist of the Control Department
+                             </div>
+                        </EclipseTooltip>
+
                         <div className="user__card-email">elisabet.front@gmail.com</div>
                         <div className="user__card-phone">+380 50 678 03 24</div>
                     </div>
@@ -43,7 +50,11 @@ export const Users : React.FC = () => {
                         </div>
                         <div className="user__card-name">Adolph Blaine Charles David Earl Matthew Matthew</div>
                         <div className="user__card-position">Contextual advertising specialist</div>
-                        <div className="user__card-email">adolph.blainecharles@gmail.com</div>
+
+                        <EclipseTooltip>
+                            <div className="user__card-email">adolph.blainecharles@gmail.com</div>
+                        </EclipseTooltip>
+
                         <div className="user__card-phone">+380 50 678 03 24</div>
                     </div>
 
