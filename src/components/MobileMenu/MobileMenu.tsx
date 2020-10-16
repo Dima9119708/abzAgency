@@ -3,6 +3,7 @@ import logo from '../../assets/img/logo.svg'
 import {useDispatch, useSelector} from "react-redux";
 import {InitialStateType} from "../../redux/reducer";
 import {SET_MOBILE_MENU_ACTION} from "../../redux/action";
+import {ScrollToSection} from "../ScrollToSetction/ScrollToSection";
 
 export const MobileMenu = () => {
 
@@ -28,16 +29,6 @@ export const MobileMenu = () => {
 
     const handleClickMenu = () => {
         dispatch(SET_MOBILE_MENU_ACTION(flagMenu ? false : true))
-    }
-
-    const handleClickScrollToForm = () => {
-        dispatch(SET_MOBILE_MENU_ACTION(false))
-        window.scrollTo({top: formaOffsetTop, behavior: "smooth"})
-    }
-
-    const handleClickScrollToUsers = () => {
-        dispatch(SET_MOBILE_MENU_ACTION(false))
-        window.scrollTo({top: usersOffsetTop, behavior: "smooth"})
     }
 
     return (
@@ -67,20 +58,18 @@ export const MobileMenu = () => {
                 </div>
 
                 <menu className="mobileMenu__menu">
+
                     <a className="mobileMenu__menu-link" href="/" >About me</a>
                     <a className="mobileMenu__menu-link" href="/" >Relationships</a>
-                    <button
-                        onClick={handleClickScrollToUsers}
-                        className="mobileMenu__menu-link" type="button"
-                    >
+
+                    <ScrollToSection offsetTop={usersOffsetTop} className={"mobileMenu__menu-link"} >
                         Users
-                    </button>
-                    <button
-                        onClick={handleClickScrollToForm}
-                        className="mobileMenu__menu-link" type="button"
-                    >
+                    </ScrollToSection>
+
+                    <ScrollToSection offsetTop={formaOffsetTop} className={"mobileMenu__menu-link"} >
                         Sign Up
-                    </button>
+                    </ScrollToSection>
+
                     <a className="mobileMenu__menu-link" href="/" >Terms and Conditions</a>
                 </menu>
 
