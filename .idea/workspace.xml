@@ -17,15 +17,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00abbae4-3e8c-44ff-94cc-7f1e31de8aa0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ScrollToSetction/ScrollToSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Forma/form.component/FormEmail.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Forma/form.component/FormLoadImage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Forma/form.component/FormName.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Forma/form.component/FormPhoneNumber.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Forma/form.component/FormRadio.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/baseStyles/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/baseStyles/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Acquaintance/Acquaintance.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Acquaintance/Acquaintance.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EclipseTooltip/EclipseTooltip.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EclipseTooltip/EclipseTooltip.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Intro/Intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Intro/Intro.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MobileMenu/MobileMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MobileMenu/MobileMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Forma/Forma.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forma/Forma.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Forma/RadioButtonStyle.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +63,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dima\Desktop\abzagency\src\components\Forma\form.component" />
+      <recent name="C:\Users\Dima\Desktop\abzagency\src\components\ScrollToSetction" />
+      <recent name="C:\Users\Dima\Desktop\abzagency\src\assets\scss" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Dima\Desktop\abzagency\public" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Dima\Desktop\abzagency\src\assets\scss" />
     </key>
   </component>
   <component name="RunManager">
@@ -97,7 +99,7 @@
       <workItem from="1602685492065" duration="4519000" />
       <workItem from="1602745978902" duration="5011000" />
       <workItem from="1602762965934" duration="14049000" />
-      <workItem from="1602833901562" duration="8103000" />
+      <workItem from="1602833901562" duration="21501000" />
     </task>
     <task id="LOCAL-00001" summary="Третий блок конец верстки.">
       <created>1602602838411</created>
@@ -134,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602777167503</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Доработка Tooltip.&#10;Добавление компонента ScrollToSection.tsx">
+      <created>1602842153061</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602842153061</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +178,8 @@
     <MESSAGE value="Осталась доработка формы с регистрацией" />
     <MESSAGE value="Завершение верстки." />
     <MESSAGE value="Добавление меню. Реализация Tooltip" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление меню. Реализация Tooltip" />
+    <MESSAGE value="Доработка Tooltip.&#10;Добавление компонента ScrollToSection.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="Доработка Tooltip.&#10;Добавление компонента ScrollToSection.tsx" />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="258" width="783" height="500" key="#File_Watchers" timestamp="1602576365974">
@@ -184,14 +194,14 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="506" y="265" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1602842020227" />
-    <state x="439" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602574814688">
+    <state x="439" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602856747657">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="439" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1602574814688" />
-    <state x="279" y="0" key="CommitChangelistDialog2" timestamp="1602777166918">
+    <state x="439" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1602856747657" />
+    <state x="279" y="0" key="CommitChangelistDialog2" timestamp="1602842152566">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="279" y="0" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1602777166918" />
+    <state x="279" y="0" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1602842152566" />
     <state x="100" y="157" width="1480" height="761" key="DiffContextDialog" timestamp="1602763429070">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -200,22 +210,22 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="403" y="173" key="EditFileWatcherDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1602575039847" />
-    <state width="1630" height="429" key="GridCell.Tab.0.bottom" timestamp="1602835842167">
+    <state width="1630" height="474" key="GridCell.Tab.0.bottom" timestamp="1602849328258">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1630" height="429" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1602835842167" />
-    <state width="1630" height="429" key="GridCell.Tab.0.center" timestamp="1602835842167">
+    <state width="1630" height="474" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1602849328258" />
+    <state width="1630" height="474" key="GridCell.Tab.0.center" timestamp="1602849328258">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1630" height="429" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1602835842167" />
-    <state width="1630" height="429" key="GridCell.Tab.0.left" timestamp="1602835842167">
+    <state width="1630" height="474" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1602849328258" />
+    <state width="1630" height="474" key="GridCell.Tab.0.left" timestamp="1602849328258">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1630" height="429" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1602835842167" />
-    <state width="1630" height="429" key="GridCell.Tab.0.right" timestamp="1602835842167">
+    <state width="1630" height="474" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1602849328258" />
+    <state width="1630" height="474" key="GridCell.Tab.0.right" timestamp="1602849328258">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1630" height="429" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1602835842167" />
+    <state width="1630" height="474" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1602849328258" />
     <state width="1630" height="429" key="GridCell.Tab.1.bottom" timestamp="1602835842167">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -268,13 +278,17 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="98" y="0" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1602835891888" />
-    <state x="232" y="106" key="Vcs.Push.Dialog.v2" timestamp="1602777171833">
+    <state x="232" y="106" key="Vcs.Push.Dialog.v2" timestamp="1602842161300">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="232" y="106" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1602777171833" />
+    <state x="232" y="106" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1602842161300" />
     <state x="199" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602771072479">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="199" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1602771072479" />
+    <state x="327" y="229" key="run.anything.popup" timestamp="1602850432867">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="327" y="229" key="run.anything.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1602850432867" />
   </component>
 </project>

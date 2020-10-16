@@ -7,16 +7,28 @@ type ActionType = {
     usersOffsetTop : number
 }
 
+type FormaType = {
+    name : string
+    email : string
+    radio : string
+}
+
 export type InitialStateType = {
     flagMenu : boolean,
     formaOffsetTop : number
     usersOffsetTop : number
+    forma : FormaType
 }
 
 const initialState : InitialStateType = {
     flagMenu : false,
     formaOffsetTop : 0,
-    usersOffsetTop : 0
+    usersOffsetTop : 0,
+    forma : {
+        name : '',
+        email : '',
+        radio : ''
+    }
 }
 
 export const reducer = (state = initialState, action : ActionType) => {
