@@ -10,6 +10,7 @@ const tooltipStyles = makeStyles({
         padding : '10px',
         backgroundColor: '#000000',
         boxShadow : '3px 3px 8px rgba(0, 0, 0, 0.3)',
+        maxWidth : '500px'
     },
 
 })
@@ -19,7 +20,6 @@ export const EclipseTooltip = ({ children } : PropTYPES) => {
     const [activeTooltip, setTooltip] = React.useState(true)
     const [text, setText] = React.useState('')
     const { tooltip } = tooltipStyles();
-
 
     const handleMouseEnter = (e : React.MouseEvent) => {
         const target = e.currentTarget as HTMLDivElement
@@ -43,11 +43,10 @@ export const EclipseTooltip = ({ children } : PropTYPES) => {
                 fontSize : 14,
                 lineHeight : '1.5',
                 color : '#fefefe',
-            }}
-            >
+            }}>
                 {text}
-
             </p>}
+
             disableHoverListener={activeTooltip}
             style={{ cursor : !activeTooltip ? 'pointer' : '' }}
 

@@ -1,6 +1,9 @@
 import React from "react";
 import {FormControl, FormControlLabel, makeStyles, Radio, RadioGroup} from "@material-ui/core";
 import clsx from "clsx";
+import {useDispatch, useSelector} from "react-redux";
+import {InitialStateType} from "../../../redux/reducer";
+import {SET_FORM_RADIO_ACTION} from "../../../redux/action";
 
 const useStyles = makeStyles({
     root: {
@@ -52,24 +55,63 @@ export const StyledRadio = (props : any) => {
 
 export const FormRadio = () => {
 
+    const [value, setValue] = React.useState('');
+    const { loadRadioButtons, radioButtons } = useSelector((state : InitialStateType) => state)
+    const dispatch = useDispatch()
+
     const handleChange = (e : React.ChangeEvent) => {
-
         const radio = e.target as HTMLInputElement
+        setValue(radio.value)
 
+        const item = radioButtons.find(item => {
+           if (item.name === radio.value) {
+               return item
+           }
+        })
+
+        dispatch(SET_FORM_RADIO_ACTION(item!.id))
+    }
+
+    if(!loadRadioButtons) {
+        return (<>
+            <div className="lds-spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </>)
     }
 
     return (<>
         <h5 className="form__title">Select your position</h5>
         <FormControl component="fieldset">
             <RadioGroup
+                value={ value
+                            ? value
+                            : radioButtons.length
+                                      ? radioButtons[0].name
+                                      : ''
+                }
                 onChange={handleChange}
-                defaultValue="Frontend developer"
-                aria-label="gender"
-                name="customized-radios">
-                <FormControlLabel value="Frontend developer" control={<StyledRadio />} label="Frontend developer" />
-                <FormControlLabel value="Backend developer" control={<StyledRadio />} label="Backend developer" />
-                <FormControlLabel value="Designer" control={<StyledRadio />} label="Designer" />
-                <FormControlLabel value="QA" control={<StyledRadio />} label="QA" />
+            >
+
+                { radioButtons.map(item => {
+                    return <FormControlLabel
+                        key={item.name}
+                        value={item.name}
+                        control={<StyledRadio />}
+                        label={item.name} />
+                })}
+
             </RadioGroup>
         </FormControl>
     </>)

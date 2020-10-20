@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './assets/scss/app.scss'
 import {Header} from "./components/Header/Header";
 import {Intro} from "./components/Intro/Intro";
@@ -7,8 +7,15 @@ import {Users} from "./components/Users/Users";
 import {Forma} from "./components/Forma/Forma";
 import {Footer} from "./components/Footer/Footer";
 import {MobileMenu} from "./components/MobileMenu/MobileMenu";
+import {useDispatch} from "react-redux";
+import {getFormRadioDATA, getToken, getUsers} from "./redux/actionAsync";
 
 function App() {
+
+  const dispatch = useDispatch()
+  dispatch(getFormRadioDATA())
+  dispatch(getToken())
+  dispatch(getUsers())
 
   return (
     <>

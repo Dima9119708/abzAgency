@@ -1,11 +1,15 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import {SET_FORM_IMAGE_ACTION} from "../../../redux/action";
 
 export const FormLoadImage = () => {
 
     const $input = React.useRef<HTMLInputElement>(null)
     const $label = React.useRef<HTMLLabelElement>(null)
-    const $errorDiv = React.useRef<HTMLDivElement>(null)
     const $image = React.useRef<HTMLImageElement>(null)
+    const [errorText, setText] = React.useState('')
+
+    const dispatch = useDispatch()
 
     const handleLoadImage = (e : React.ChangeEvent) => {
 
@@ -15,45 +19,52 @@ export const FormLoadImage = () => {
 
         const labelNode = $label.current!
         const inputNode = $input.current!
-        const errorNode = $errorDiv.current!
         const imageNode = $image.current!
 
         const test = image?.name.endsWith('.jpg') || image?.name.endsWith('.jpeg')
 
         if (image && image.size < 5000000 && test) {
 
-            reader.onload = () => {
+            reader.onload = (file) => {
 
                 Promise
                     .resolve(reader.result)
-                    .then(urlImage => imageNode.src = `${urlImage}`)
-                    .then(e => {
+                    .then(urlImage => {
+                        imageNode.src = `${urlImage}`
+                        return urlImage
+                    })
+                    .then(urlImage => {
                         const {height, width} = imageNode
 
                         if (height <= 70 && width <= 70) {
                             inputNode.style.border = '1px solid #80bdff'
                             inputNode.style.boxShadow = '0 0 2px #80bdff'
-                            inputNode.value = image.name
                             labelNode.style.border = '1px solid #80bdff'
                             labelNode.style.boxShadow = '0 0 2px #80bdff'
-                            errorNode.innerHTML = ''
+
+                            inputNode.value = image.name
+                            setText('')
+
+                            dispatch(SET_FORM_IMAGE_ACTION(reader.result))
                         }
                         else {
                             notIsValid()
-                            errorNode.innerHTML = 'The image must be 70x70'
+                            setText('The image must be 70x70')
+                            dispatch(SET_FORM_IMAGE_ACTION(''))
                         }
                     })
                     .catch(e => {
                         notIsValid()
-                        errorNode.innerHTML = 'There was an error loading the image'
+                        setText('There was an error loading the image')
+                        dispatch(SET_FORM_IMAGE_ACTION(''))
                     })
-
             }
             reader.readAsDataURL(image)
         }
         else {
             notIsValid()
-            errorNode.innerHTML = 'The image must not be larger than 5MB. Available image format .jpg/jpeg'
+            setText('The image must not be larger than 5MB. Available image format .jpg/jpeg')
+            dispatch(SET_FORM_IMAGE_ACTION(''))
         }
 
         function notIsValid() {
@@ -69,14 +80,14 @@ export const FormLoadImage = () => {
             <div className="form__inner">
                 <input
                     ref={$input}
-                    className="form__input"
+                    className="form__input notRightNotBottomBorder"
                     type="text" disabled
                     style={{backgroundColor : '#ffffff'}}
                     placeholder="Upload your photo"
                 />
                 <input
                     onChange={handleLoadImage}
-                    className="form__input-file"
+                    className="form__input-file "
                     id="file"
                     type="file"/>
                 <label
@@ -87,10 +98,7 @@ export const FormLoadImage = () => {
                     Browse
                 </label>
             </div>
-            <p
-                ref={$errorDiv}
-                className="form__error">
-            </p>
+            <p className="form__error">{errorText}</p>
 
             <div style={{display : 'none'}}>
                 <img ref={$image}/>
