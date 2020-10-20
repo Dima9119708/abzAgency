@@ -5,11 +5,11 @@ import {InitialStateType} from "../../redux/reducer";
 
 type PropsType = {
     children : string,
-    offsetTop : number
+    div : HTMLDivElement | null
     className : string
 }
 
-export const ScrollToSection = ({ children, offsetTop, className } : PropsType ) => {
+export const ScrollToSection = ({ children, div, className } : PropsType ) => {
 
     const { flagMenu } = useSelector((state: InitialStateType) => state)
     const dispatch = useDispatch()
@@ -18,14 +18,14 @@ export const ScrollToSection = ({ children, offsetTop, className } : PropsType )
         if (flagMenu) {
             dispatch(SET_MOBILE_MENU_ACTION(false))
         }
-        window.scrollTo({top: offsetTop, behavior: "smooth"})
+        window.scrollTo({top: div!.offsetTop, behavior: "smooth"})
     }
 
-    return (<button
+    return <button
         type="button"
         className={className}
         onClick={handleClickScroll}
     >
         {children}
-    </button>)
+    </button>
 }

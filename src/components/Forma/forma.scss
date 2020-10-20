@@ -78,6 +78,11 @@
     }
   }
 
+  .notRightNotBottomBorder {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
   .form .form__error{
     line-height: 2;
     color: #f44336;

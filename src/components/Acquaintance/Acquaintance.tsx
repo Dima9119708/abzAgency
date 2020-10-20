@@ -1,12 +1,12 @@
 import React from "react";
 import imgLayer10 from '../../assets/img/man-laptop-v1.svg'
-import {ScrollToSection} from "../ScrollToSetction/ScrollToSection";
+import {ScrollToSection} from "../ScrollToSection/ScrollToSection";
 import {useSelector} from "react-redux";
 import {InitialStateType} from "../../redux/reducer";
 
 export const Acquaintance : React.FC = () => {
 
-    const { formaOffsetTop } = useSelector((state : InitialStateType) => state)
+    const { formaDiv } = useSelector((state : InitialStateType) => state)
 
     return (
         <section className="acquaintance boxPadding">
@@ -37,7 +37,7 @@ export const Acquaintance : React.FC = () => {
                         <div className="textAlignCenter">
 
                             <ScrollToSection
-                                offsetTop={formaOffsetTop}
+                                div={formaDiv}
                                 className={'acquaintance__link'}
                             >
                                 Sing up now

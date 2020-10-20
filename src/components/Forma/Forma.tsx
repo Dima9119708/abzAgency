@@ -6,6 +6,7 @@ import {FormEmail} from "./form.component/FormEmail";
 import {FormPhoneNumber} from "./form.component/FormPhoneNumber";
 import {FormRadio} from "./form.component/FormRadio";
 import {FormLoadImage} from "./form.component/FormLoadImage";
+import {FormSubmit} from "./form.component/FormSubmit";
 
 
 export const Forma = () => {
@@ -14,11 +15,8 @@ export const Forma = () => {
     const dispatch = useDispatch()
 
     React.useEffect(() => {
-
         const $forma = $formDiv.current! as HTMLDivElement
-        const offsetTop = $forma.offsetTop
-        dispatch(SET_FORMA_OFFSET_TOP_ACTION(offsetTop))
-
+        dispatch(SET_FORMA_OFFSET_TOP_ACTION($forma))
     }, [$formDiv])
 
     return (
@@ -54,7 +52,7 @@ export const Forma = () => {
                     </div>
 
                     <div className="form__button">
-                        <button className="sing__button" type="submit">Sing up now</button>
+                        <FormSubmit />
                     </div>
 
                 </form>

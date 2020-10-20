@@ -3,11 +3,11 @@ import logo from '../../assets/img/logo.svg'
 import {useDispatch, useSelector} from "react-redux";
 import {InitialStateType} from "../../redux/reducer";
 import {SET_MOBILE_MENU_ACTION} from "../../redux/action";
-import {ScrollToSection} from "../ScrollToSetction/ScrollToSection";
+import {ScrollToSection} from "../ScrollToSection/ScrollToSection";
 
 export const MobileMenu = () => {
 
-    const { flagMenu,formaOffsetTop,usersOffsetTop } = useSelector((state: InitialStateType) => state)
+    const { flagMenu,formaDiv, userDiv } = useSelector((state: InitialStateType) => state)
     const dispatch = useDispatch()
 
     React.useEffect(() => {
@@ -43,7 +43,6 @@ export const MobileMenu = () => {
                 }}
             />
 
-
             <div
                 className="mobileMenu"
                 style={{
@@ -62,11 +61,11 @@ export const MobileMenu = () => {
                     <a className="mobileMenu__menu-link" href="/" >About me</a>
                     <a className="mobileMenu__menu-link" href="/" >Relationships</a>
 
-                    <ScrollToSection offsetTop={usersOffsetTop} className={"mobileMenu__menu-link"} >
+                    <ScrollToSection div={userDiv} className={"mobileMenu__menu-link"} >
                         Users
                     </ScrollToSection>
 
-                    <ScrollToSection offsetTop={formaOffsetTop} className={"mobileMenu__menu-link"} >
+                    <ScrollToSection div={formaDiv} className={"mobileMenu__menu-link"} >
                         Sign Up
                     </ScrollToSection>
 
